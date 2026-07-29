@@ -241,6 +241,16 @@ h4 {
     
 }
 
+.right-side h2{
+    font-size: 42px;
+}
+
+.divider{
+    background-color: rgb(194, 194, 194);
+    width: 0.6px;
+    align-self: stretch;
+}
+
 #about-us-container {
     border: 1.2px solid  rgb(6, 62, 136);
     width:fit-content;
