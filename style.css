@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     color: white;
@@ -6,13 +6,15 @@
     padding: 0;
 
 }
-.body, html{
+
+.body,
+html {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
 }
 
-.full-page{
+.full-page {
     display: flex;
     justify-content: flex-start;
     height: 100vh;
@@ -22,11 +24,12 @@
     padding: 80px;
 }
 
-.bg-home{
+.bg-home {
     background-image: url(/images/Gemini_Generated_Image_7p6t27p6t27p6t27.png);
 }
+
 .site-header {
-    display : flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 80px;
@@ -36,15 +39,15 @@
     left: 0;
     max-width: 100%;
     z-index: 10;
-    
+
 
 }
 
-.logo{
+.logo {
     width: 20%;
 }
 
-.navbar ul{
+.navbar ul {
     display: flex;
     margin: 0;
     padding: 0;
@@ -53,14 +56,15 @@
 
 }
 
-.navbar a{
+.navbar a {
     text-decoration: none;
     white-space: nowrap;
-    
+
 }
 
-.navbar{
+.navbar {
     padding: 0;
+    margin: 0;
     white-space: nowrap;
     display: flex;
     align-items: center;
@@ -68,57 +72,188 @@
 
 }
 
-.lang-selector{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    justify-content: center;
-    padding-bottom: 20px;
+.lang-selector {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 8px 16px;
+
 
 }
 
-.lang-selector img{
-    width:14px;
+.lang-selector a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.lang-selector img {
+    width: 14px;
 }
 
 #home {
     align-items: center;
 }
 
-.hero-section h1{
-   font-size: 64px;
+.hero-section h1 {
+    font-size: 64px;
 
 }
 
 .hero-section {
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 30px
-
 }
 
-.btn{
+.btn {
     display: inline-block;
     padding: 14px 16px;
     transition: all 0.3 ease;
     font-weight: 6000px;
     text-decoration: none;
     border: 2px solid white;
+
+}
+
+.btn-primary {
+    background-color: white;
+    color: black;
+}
+
+.btn-secondary {
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.feature-card img {
+    width: 32px;
+}
+
+.feature-card {
+    flex: 1;
+    text-align: center;
+    padding: 40px 30px;
+    background-color: rgb(6, 62, 136);
+    color: white;
+    max-width: 60%;
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+}
+
+.feature-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    opacity: 0.85;
+}
+
+.features-container {
+    padding-top: 45px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 80%;
+    padding-right: 80px;
+
+}
+
+#about p,
+h2,
+h4 {
+    color: black;
+}
+
+#about {
+    padding-top: 50%;
+    align-items: center;
+}
+
+.description {
+    display: flex;
+    align-items: stretch;
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left-side,
+.right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-side{
+    gap: 1.5rem;
+}
+
+.left-side > img{
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.vis-mis {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: auto;
+}
+
+.purpose{
+    flex: 1;
+}
+
+.purpose h4 {
+    margin: 20px 0 10px 0;
+    opacity: 0.85;
+}
+
+.purpose p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    opacity: 0.6;
+}
+
+.right-side{
+    gap: 1rem
+}
+
+.right-side > img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    margin-top: auto;
     
 }
 
-.btn-primary{
-   background-color: white;
-   color:black;
+#about-us-container {
+    border: 1.2px solid  rgb(6, 62, 136);
+    width:fit-content;
+    padding: 8px;
+    display: flex;
+    gap: 0.5rem;
 }
 
-.btn-secondary{
-   color: white;
+#about-us-container img {
+    width: 20px;
+    height: 20px;
 }
 
-.hero-buttons{
-    padding-left: 2px;
-    display:flex;
-    align-items: center;
-    gap: 20px;
+#about-us-container span {
+   color:  rgb(6, 62, 136);
 }
