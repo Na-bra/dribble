@@ -17,11 +17,13 @@ html {
 .full-page {
     display: flex;
     justify-content: flex-start;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    min-width: 100vw;
+    width:auto;
     background-size: cover;
     background-color: center;
-    padding: 80px;
+    padding: 5rem 2rem;
 }
 
 .bg-home {
@@ -177,7 +179,7 @@ h4 {
 }
 
 #about {
-    padding-top: 50%;
+    padding-top: 15rem;
     align-items: center;
 }
 
@@ -267,3 +269,20 @@ h4 {
 #about-us-container span {
    color:  rgb(6, 62, 136);
 }
+
+#academic{
+   margin-top: 4rem;
+}
+
+.bg-academic{
+     background-color:  rgb(6, 62, 136);
+}
+
+.academic-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
