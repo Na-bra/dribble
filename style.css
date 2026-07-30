@@ -1,10 +1,33 @@
+:root{
+    --bg-color: white;
+    --text-on-dark: white;
+    --card-color: rgb(6, 62, 136);
+    --light-card-color: rgb(21, 75, 146);
+    --text-on-light: black;
+    --primary-color: white;
+    --secondary-color: black;
+}
+
+body.dark-theme{
+     --bg-color: black;
+    --text-on-dark: rgb(106, 134, 246);
+    --card-color: rgb(3, 22, 48);
+    --light-card-color: rgb(17, 53, 101);
+    --text-on-light: white;
+    --primary-color: rgb(106, 134, 246);
+    --secondary-color: white;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    color: white;
+}
+
+body {
     margin: 0;
     padding: 0;
-
+    background-color: var(--bg-color);
+    color: var(--text-on-dark);
 }
 
 .body,
@@ -61,7 +84,7 @@ html {
 .navbar a {
     text-decoration: none;
     white-space: nowrap;
-
+    color: var(--text-on-dark);
 }
 
 .navbar {
@@ -74,8 +97,18 @@ html {
 
 }
 
+#theme-toggle{
+    appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    background-color: transparent;
+    border: solid 0.03rem var(--primary-color);
+    padding: 0.05rem 1rem;
+    border-radius: 4px;
+}
+
 .lang-selector {
-    border: 1px solid white;
+    border: 1px solid var(--text-on-dark);
     border-radius: 20px;
     padding: 8px 16px;
 
@@ -114,17 +147,17 @@ html {
     transition: all 0.3 ease;
     font-weight: 6000px;
     text-decoration: none;
-    border: 2px solid white;
+    border: 2px solid var(--text-on-dark);
 
 }
 
 .btn-primary {
-    background-color: white;
-    color: black;
+    background-color: var(--primary-color);
+    color: var(--text-on-light);
 }
 
 .btn-secondary {
-    color: white;
+    color: var(--text-on-dark);
 }
 
 .hero-buttons {
@@ -145,8 +178,8 @@ html {
     gap: 1.5rem;
     text-align: center;
     padding: 40px 30px;
-    background-color: rgb(6, 62, 136);
-    color: white;
+    background-color: var(--card-color);
+    color: var(--text-on-dark);
     
 }
 
@@ -183,7 +216,7 @@ html {
 #about p,
 h2,
 h4 {
-    color: black;
+    color: var(--text-on-light);
 }
 
 #about {
@@ -262,7 +295,7 @@ h4 {
 }
 
 #about-us-container {
-    border: 1.2px solid  rgb(6, 62, 136);
+    border: 1.2px solid  var(--card-color);
     width:fit-content;
     padding: 8px;
     display: flex;
@@ -275,7 +308,7 @@ h4 {
 }
 
 #about-us-container span {
-   color:  rgb(6, 62, 136);
+   color:  var(--card-color);
 }
 
 #academic{
@@ -287,13 +320,13 @@ h4 {
 }
 
 .bg-academic{
-     background-color:  rgb(6, 62, 136);
+     background-color:  var(--card-color);
 }
 
 .academic-container{
     display: flex;
     justify-content: center;
-    border: 0.002rem solid white;
+    border: 0.002rem solid var(--primary-color);
     width:fit-content;
     padding: 0.8rem;
     align-items: center;
@@ -306,11 +339,11 @@ h4 {
 }
 
 .feature-card--light{
-    background-color: rgb(12, 80, 169);
+    background-color: var(--light-card-color);
 }
 
 .heading-text > h2{
-    color: white;
+    color: var(--text-on-dark);
     font-size: 3rem;
 }
 
