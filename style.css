@@ -139,11 +139,15 @@ html {
 
 .feature-card {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
     text-align: center;
     padding: 40px 30px;
     background-color: rgb(6, 62, 136);
     color: white;
-    max-width: 60%;
+    
 }
 
 .feature-card h3 {
@@ -159,17 +163,21 @@ html {
 }
 
 .features-container {
-    padding-top: 45px;
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    width: auto;
-    max-width: 100%;
-    margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: stretch; 
+   gap: 2rem;
+   width: 90%;
+   max-width: 1200px;
+   padding: 45px 0;
+}
+
+.features-container--floating{
     position: absolute;
     top: 80%;
-    padding-right: 80px;
-
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
 }
 
 #about p,
@@ -272,6 +280,10 @@ h4 {
 
 #academic{
    margin-top: 4rem;
+   display: flex;
+   flex-direction: column;
+   gap: 4rem;
+   align-items: center;;
 }
 
 .bg-academic{
@@ -281,8 +293,37 @@ h4 {
 .academic-container{
     display: flex;
     justify-content: center;
+    border: 0.002rem solid white;
+    width:fit-content;
+    padding: 0.8rem;
     align-items: center;
-    flex-direction: row;
+    font-weight: 0.5rem;
 }
+
+.academic-container > img{
+   width: 20px;
+   height: 20px;
+}
+
+.feature-card--light{
+    background-color: rgb(12, 80, 169);
+}
+
+.heading-text > h2{
+    color: white;
+    font-size: 3rem;
+}
+
+.heading-text{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+.heading-text p{
+    opacity: 0.8;
+}
+
 
 
